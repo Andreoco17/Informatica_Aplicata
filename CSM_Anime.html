@@ -42,7 +42,32 @@ p14{font-size: 30px;}
 p14{margin-left: 24%;}
 p15{font-size: 30px;}
 p15{margin-left: 27%;}
-
+p16{font-size: 25px;}
+p16{margin-left: 2%;}
+p17{font-size: 25px;}
+p17{margin-left: 10%;}
+p18{font-size: 25px;}
+p18{margin-left: 13%;}
+p19{font-size: 25px;}
+p19{margin-left: 70%;}
+p20{font-size: 25px;}
+p20{margin-left: 4%;}
+p21{font-size: 25px;}
+p21{margin-left: 13.5%;}
+p22{font-size: 25px;}
+p22{margin-left: 11%;}
+p23{font-size: 25px;}
+p23{margin-left: 3.5%;}
+p24{font-size: 25px;}
+p24{margin-left: 7.5%;}
+p25{font-size: 25px;}
+p25{margin-left: 7.5%;}
+p26{font-size: 25px;}
+p26{margin-left: 4%;}
+p27{font-size: 25px;}
+p27{margin-left: 13%;}
+p28{font-size: 25px;}
+p28{margin-left: 14%;}
 
 table, th,td {
   border: 1px solid black;
@@ -79,6 +104,20 @@ th2, td2 { padding: 5%; }
 .left {
   margin-left: 36%;
 }
+.button-container {
+      display: flex;
+      gap: 3%; /* Space between buttons */
+      justify-content: center; /* Center the buttons horizontally */
+      margin-top: 20px;
+    }
+    .play-button {
+      width: 30%; /* Adjust width as needed */
+      cursor: pointer;
+    }
+    .button-text {
+      margin-top: 8px;
+      font-size: 14px;
+    }
     </style>
 </head>
 <body>
@@ -280,11 +319,131 @@ th2, td2 { padding: 5%; }
   </audio>
   <h1>Opening:</h1>
   <br><br>
+  <div class="image-container">
   <img id="play-button" src="img/Kick_Back.png" alt="Play Button" class="center">
-  <h3 class="left">"Kick Back" by Kenshi Yonezu</h3  >
+  </div>
+  <h3 class="left">"Kick Back" by Kenshi Yonezu</h3>
     <br><br>
     <h1>Endings:</h1>
     <br><br>
+    <audio class="audio-player" id="audio1">
+        <source src="vid/Chainsaw Blood.mp3" type="audio/mp3">
+      </audio>
+      <audio class="audio-player" id="audio2">
+        <source src="vid/Time Left.mp3" type="audio/mp3">
+      </audio>
+      <audio class="audio-player" id="audio3">
+        <source src="vid/Hawatari 2-Oku Centi.mp3" type="audio/mp3">
+      </audio>
+      <div class="image-container">
+      <div class="button-container">
+    <img class="play-button" data-audio-id="audio1" src="img/ED1.png" alt="Play Button 1">
+    <img class="play-button" data-audio-id="audio2" src="img/ED2.png" alt="Play Button 2">
+    <img class="play-button" data-audio-id="audio3" src="img/ED3.png" alt="Play Button 3">
+  </div>
+  </div>
+  <table>
+    <tr>
+        <td1><p16><b>"Chainsaw Blood" by Vaundy</b></p16></td>
+        <t1><p17><b>"Time Left" by ZUTOMAYO</p17></b></td>
+        <t1><p18><b>"Hawatari 2-Oku Cent"</b></p18>
+            <b><p19>by MAXIMUM THE HORMONE</p19></b></td>
+    </tr>
+  </table>
+
+  <audio class="audio-player" id="audio4">
+    <source src="vid/Tablet.mp3" type="audio/mp3">
+  </audio>
+  <audio class="audio-player" id="audio5">
+    <source src="vid/In The Back Room.mp3" type="audio/mp3">
+  </audio>
+  <audio class="audio-player" id="audio6">
+    <source src="vid/Rendezvous.mp3" type="audio/mp3">
+  </audio>
+  <div class="image-container">
+  <div class="button-container">
+<img class="play-button" data-audio-id="audio4" src="img/ED4.png" alt="Play Button 1">
+<img class="play-button" data-audio-id="audio5" src="img/ED5.png" alt="Play Button 2">
+<img class="play-button" data-audio-id="audio6" src="img/ED6.png" alt="Play Button 3">
+</div>
+</div>
+<table>
+<tr>
+    <td1><p20><b>"Tablet" by TOOBOE</b></p22></td>
+    <t1><p21><b>"In The Back Room" by syudou</p22></b></td>
+    <t1><p22><b>"Rendezvous" by Kanaria</b></p22></td>
+</tr>
+</table>
+
+<audio class="audio-player" id="audio7">
+    <source src="vid/Chu, Tayousei.mp3" type="audio/mp3">
+  </audio>
+  <audio class="audio-player" id="audio8">
+    <source src="vid/First Death.mp3" type="audio/mp3">
+  </audio>
+  <audio class="audio-player" id="audio9">
+    <source src="vid/Deep Down.mp3" type="audio/mp3">
+  </audio>
+  <div class="image-container">
+  <div class="button-container">
+<img class="play-button" data-audio-id="audio7" src="img/ED7.png" alt="Play Button 1">
+<img class="play-button" data-audio-id="audio8" src="img/ED8.png" alt="Play Button 2">
+<img class="play-button" data-audio-id="audio9" src="img/ED9.png" alt="Play Button 3">
+</div>
+</div>
+<table>
+<tr>
+    <td1><p23><b>"Chu, Tayousei." by ano</b></p23></td>
+    <t1><p24><b>"First Death" by TK from Ling Tosite Sigure</p24></b></td>
+    <t1><p25><b>"Deep Down" by aimer</b></p25></td>
+</tr>
+</table>
+
+<audio class="audio-player" id="audio10">
+    <source src="vid/Dogland.mp3" type="audio/mp3">
+  </audio>
+  <audio class="audio-player" id="audio11">
+    <source src="vid/Violence.mp3" type="audio/mp3">
+  </audio>
+  <audio class="audio-player" id="audio12">
+    <source src="vid/Fight Song.mp3" type="audio/mp3">
+  </audio>
+  <div class="image-container">
+  <div class="button-container">
+<img class="play-button" data-audio-id="audio10" src="img/ED10.png" alt="Play Button 1">
+<img class="play-button" data-audio-id="audio11" src="img/ED11.png" alt="Play Button 2">
+<img class="play-button" data-audio-id="audio12" src="img/ED12.png" alt="Play Button 3">
+</div>
+</div>
+<table>
+<tr>
+    <td1><p26><b>"Dogland" by PEOPLE 1</b></p26></td>
+    <t1><p27><b>"Violence" by QUEEN BEE</p27></b></td>
+    <t1><p28><b>"Fight Song" by eve</b></p28></td>
+</tr>
+</table>
+<!-- JavaScript to Toggle Play/Pause for Each Button -->
+<script>
+    // Get all play buttons and audio elements
+    const playButtons = document.querySelectorAll('.play-button');
+
+    // Loop through each button and add an event listener
+    playButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Get the corresponding audio element using data attribute
+        const audioId = button.getAttribute('data-audio-id');
+        const audioPlayer = document.getElementById(audioId);
+
+        // Toggle play/pause and change icon
+        if (audioPlayer.paused) {
+          audioPlayer.play();
+        } else {
+          audioPlayer.pause();
+        }
+      });
+    });
+  </script>
+
   <script>
     // Get references to the audio and image elements
     const audioPlayer = document.getElementById('audio-player');
