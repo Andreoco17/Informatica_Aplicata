@@ -175,6 +175,45 @@ th2, td2 { padding: 5%; }
             color: gray;
             margin-top: 8px;
         }
+     
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        
+        .video-item {
+            width: 500px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .video-item1 {
+            width: 386px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .video-thumbnail {
+            width: 100%;
+            border-radius: 8px;
+            background-color: #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .video-title {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -884,6 +923,100 @@ th2, td2 { padding: 5%; }
         </div>
     </div>
 </div>
+<br><br>
+<h1>Promotional Videos</h1>
+<hr>
+<h1>Trailers</h1>
+<br><br>
+<div class="video-grid">
+    
+    <div class="video-item">
+        <video class="video-thumbnail" controls width="400" preload="metadata">
+            <source src="vid/Trailer 1.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">TV ``Chain Saw Man'' Teaser PV</div>
+    </div>
+
+
+    <div class="video-item">
+        <video class="video-thumbnail" controls width="400" preload="metadata">
+            <source src="vid/Trailer 2.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">“Chainsaw Man” project PV</div>
+    </div>
+
+    <div class="video-item">
+        <video class="video-thumbnail" controls width="400" preload="metadata">
+            <source src="vid/Trailer 3.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">Chainsaw Man - Official 3rd Trailer</div>
+    </div>
+
+
+    <div class="video-item">
+        <video class="video-thumbnail" controls width="400" preload="metadata">
+            <source src="vid/Trailer 4.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">Chainsaw Man - Main Trailer</div>
+    </div>
+
+</div>
+
+<br><br>
+<h1>Character PVs</h1>
+<br><br>
+<div class="video-grid">
+    
+    <div class="video-item1">
+        <video class="video-thumbnail" controls width="400" preload="metadata">
+            <source src="vid/CHAINSAW MAN CHARACTER PV DENJI.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">PV “DENJI”</div>
+    </div>
+    <div class="video-item1">
+        <video class="video-thumbnail" controls width="400" preload="metadata">
+            <source src="vid/CHAINSAW MAN CHARACTER PV AKI.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">PV “AKI”</div>
+    </div>
+    <div class="video-item1">
+        <video class="video-thumbnail" controls width="400" preload="metadata">
+            <source src="vid/CHAINSAW MAN CHARACTER PV POWER.mp4" type="video/mp4">
+        </video>
+        <div class="video-title">PV “POWER”</div>
+    </div>
+</div>
+<div class="video-grid">
+<div class="video-item1">
+    <video class="video-thumbnail" controls width="400" preload="metadata">
+        <source src="vid/CHAINSAW MAN CHARACTER PV MAKIMA.mp4" type="video/mp4">
+    </video>
+    <div class="video-title">PV “MAKIMA”</div>
+</div>
+<div class="video-item1">
+    <video class="video-thumbnail" controls width="400" preload="metadata">
+        <source src="vid/CHAINSAW MAN CHARACTER PV HIMENO.mp4" type="video/mp4">
+    </video>
+    <div class="video-title">PV “HIMENO”</div>
+</div>
+<div class="video-item1">
+    <video class="video-thumbnail" controls width="400" preload="metadata">
+        <source src="vid/HAINSAW MAN CHARACTER PV KOBENI.mp4" type="video/mp4">
+    </video>
+    <div class="video-title">PV “KOBENI”</div>
+</div>
+</div>
+<div class="video-grid">
+<div class="video-item1">
+    <video class="video-thumbnail" controls width="400" preload="metadata">
+        <source src="vid/CHAINSAW MAN CHARACTER PV POCHITA.mp4" type="video/mp4">
+    </video>
+    <div class="video-title">PV “POCHITA”</div>
+</div>
+</div>
+
+
+
 <!-- JavaScript to Toggle Play/Pause for Each Button -->
 <script>
     // Get all play buttons and audio elements
