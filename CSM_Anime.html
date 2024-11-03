@@ -214,14 +214,71 @@ th2, td2 { padding: 5%; }
             font-weight: bold;
             color: #333;
         }
+        .toc-container {
+        width: 250px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    .toc-title {
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .toc-title:hover {
+        color: #555;
+    }
+    .toc-content {
+        list-style-type: none;
+        padding-left: 0;
+        display: none; /* Initially hidden */
+    }
+    .toc-content li {
+        margin: 5px 0;
+    }
+    .toc-content ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    .toc-content li a {
+        text-decoration: none;
+        color: #333;
+    }
+    .toc-content li a:hover {
+        color: #0073e6;
+    }
     </style>
 </head>
 <body>
+    <div class="toc-container">
+        <div class="toc-title" onclick="toggleToc()">Contents</div>
+        <ul id="tocContent" class="toc-content">
+            <li><a href="#plot">1. Plot</a></li>
+            <li><a href="#episodes">2. Episodes</a></li>
+            <li><a href="#characters">3. Characters</a></li>
+            <li><a href="#cast">4. Cast</a></li>
+            <li><a href="#soundtrack">5. Soundtrack</a></li>
+            <ul>
+                <li><a href="#opening">5.1. Opening</a></li>
+                <li><a href="#endings">5.2. Endings</a></li>
+            </ul>
+            <li><a href="#awards">6. Awards</a></li>
+            <li><a href="#PV"> 7. Promotional Videos</a></li>
+            <ul>
+                <li><a href="#trailers">7.1. Trailers</a></li>
+                <li><a href="#pvs">7.2. Character PVs</a></li>
+            </ul>
+        </ul>
+    </div>
+    <section id="plot">
     <h1>Plot</h1>
+    </section>
 <hr>
 <p>Following a betrayal, a young man left for dead is reborn as a powerful devil-human hybrid after merging with his pet devil and is soon enlisted into an organization dedicated to hunting devils.</p> 
 <br><br>    
-<h1>Episodes</h1>   
+<section id="episodes">
+<h1>Episodes</h1>  
+</section> 
 <hr>
 <table style="width:100% ;">
     <tr>
@@ -304,7 +361,9 @@ th2, td2 { padding: 5%; }
     </tr>
 </table>
 <br><br>
+<section id="characters">
 <h1>Characters</h1>
+</section>
 <hr>
     <table1>
         <tr>
@@ -363,7 +422,9 @@ th2, td2 { padding: 5%; }
         </tr>   
     </table>
 <br><br>
+<section id="cast">
 <h1>Cast</h1>
+</section>
 <hr>
 <div class="float-parent-element">
     <div class="float-child-element">
@@ -408,19 +469,25 @@ th2, td2 { padding: 5%; }
     </div>
   </div>
 <br><br>
+<section id="soundtrack">
 <h1>Soundtrack</h1>
+</section>
 <hr>
 <audio id="audio-player">
     <source src="vid/Kick-Back.mp3" type="audio/mp3">
   </audio>
+  <section id="opening">
   <h1>Opening:</h1>
+  </section>
   <br><br>
   <div class="image-container">
   <img id="play-button" src="img/Kick_Back.png" alt="Play Button" class="center">
   </div>
   <h3 class="left">"Kick Back" by Kenshi Yonezu</h3>
     <br><br>
+    <section id="endings">
     <h1>Endings:</h1>
+    </section>
     <br><br>
     <audio class="audio-player" id="audio1">
         <source src="vid/Chainsaw Blood.mp3" type="audio/mp3">
@@ -518,7 +585,9 @@ th2, td2 { padding: 5%; }
 </tr>
 </table>
 <br><br><br>
+<section id="awards">
 <h1>Awards</h1>
+</section>
 <hr>
 <div class="nominee-row">
     
@@ -924,9 +993,13 @@ th2, td2 { padding: 5%; }
     </div>
 </div>
 <br><br>
+<section id="PV">
 <h1>Promotional Videos</h1>
+</section>
 <hr>
+<section id="trailers">
 <h1>Trailers</h1>
+</section>
 <br><br>
 <div class="video-grid">
     
@@ -963,7 +1036,9 @@ th2, td2 { padding: 5%; }
 </div>
 
 <br><br>
+<section id="pvs">
 <h1>Character PVs</h1>
+</section>
 <br><br>
 <div class="video-grid">
     
@@ -1054,7 +1129,12 @@ th2, td2 { padding: 5%; }
         playButton.src="img/Kick_Back.png"
       }
     });
-        
   </script>
+  <script>
+    function toggleToc() {
+        var tocContent = document.getElementById("tocContent");
+        tocContent.style.display = tocContent.style.display === "none" ? "block" : "none";
+    }
+</script>
 </body>
 </html>
