@@ -106,18 +106,75 @@ th2, td2 { padding: 5%; }
 }
 .button-container {
       display: flex;
-      gap: 3%; /* Space between buttons */
-      justify-content: center; /* Center the buttons horizontally */
+      gap: 3%; 
+      justify-content: center; 
       margin-top: 20px;
     }
     .play-button {
-      width: 30%; /* Adjust width as needed */
+      width: 30%; 
       cursor: pointer;
     }
     .button-text {
       margin-top: 8px;
       font-size: 14px;
     }
+
+
+.nominee-row {
+            display: flex;
+            gap: 20px; 
+            flex-wrap: wrap; 
+        }
+
+        
+        .nominee-card {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            max-width: 329px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        
+        .nominee-card img {
+            width: 35%;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        
+        .nominee-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nominee-title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nominee-subtitle {
+            color: gray;
+            font-size: 15px;
+        }
+
+        .nominee-category {
+            font-size: 16px;
+        }
+        .nominee-name {
+            color: #0066cc;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        .episode-info {
+            font-size: 15px;
+            color: gray;
+            margin-top: 8px;
+        }
     </style>
 </head>
 <body>
@@ -350,7 +407,6 @@ th2, td2 { padding: 5%; }
             <b><p19>by MAXIMUM THE HORMONE</p19></b></td>
     </tr>
   </table>
-
   <audio class="audio-player" id="audio4">
     <source src="vid/Tablet.mp3" type="audio/mp3">
   </audio>
@@ -422,6 +478,412 @@ th2, td2 { padding: 5%; }
     <t1><p28><b>"Fight Song" by eve</b></p28></td>
 </tr>
 </table>
+<br><br><br>
+<h1>Awards</h1>
+<hr>
+<div class="nominee-row">
+    
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Saturn Award</span>
+            <span class="nominee-category">Best Animated Television Series or Special</span>
+        </div>
+    </div>
+
+    <div class="nominee-card">
+        <img src="img/Ryu.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Cristal</span>
+            <span class="nominee-category">Best TV Production</span>
+            <span class="nominee-name">Ryû Nakayama</span>
+            <span class="episode-info">For episode: "Dog & Chainsaw"</span>
+        </div>
+    </div>
+
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">"Must Protect At All Costs" Character</span>
+            <span class="episode-info">for Pochita</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Anime of the Year</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Action</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Score</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Animation</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Supporting Character</span>
+            <span class="episode-info">for Power</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Kenshi.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2022 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Anime Song</span>
+            <span class="nominee-name">Kenshi Yonezu</span>
+            <span class="episode-info">for song "Kick Back"</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Ryan Colt.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Winner</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (English)</span>
+            <span class="nominee-name">Ryan Colt Levy</span>
+            <span class="episode-info">for Denji</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Toya.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (Japanese)</span>
+            <span class="nominee-name">Kikunosuke Toya</span>
+            <span class="episode-info">for Denji</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Ryu.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Director</span>
+            <span class="nominee-name">Ryû Nakayama</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Character Design</span>
+            <span class="nominee-name">Kazutaka Sugiyama</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Ending Sequence</span>
+            <span class="nominee-name">Maximum The Hormone</span>
+            <span class="episode-info">for "HAWATARI NIOKU CENTI (2-hundred-million-centimeter-long blades)"</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Cinematography</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Winner</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (Castillan)</span>
+            <span class="nominee-name">Joel Gómez Jiménez</span>
+            <span class="episode-info">for Denji</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (Castillan)</span>
+            <span class="nominee-name">María Luisa Marciel</span>
+            <span class="episode-info">for Power</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Emilio.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Winner</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (Spanish)</span>
+            <span class="nominee-name">Emilio Treviño</span>
+            <span class="episode-info">as Denji</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Franziska.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Winner</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (German)</span>
+            <span class="nominee-name">Franziska Trunte</span>
+            <span class="episode-info">as Power</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Luisa.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (Portuguese)</span>
+            <span class="nominee-name">Luísa Viotti</span>
+            <span class="episode-info">as Makima</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Benedetta.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (Italian)</span>
+            <span class="nominee-name">Benedetta Ponticelli</span>
+            <span class="episode-info">as Makima</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Mose-Singh.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Winner</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (Italian)</span>
+            <span class="nominee-name">Mosè Singh</span>
+            <span class="episode-info">as Denji</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Zina.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best VA Performance (French)</span>
+            <span class="nominee-name">Zina Khakhoulia</span>
+            <span class="episode-info">as Power</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Main Characte</span>
+            <span class="episode-info">for Denji</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Art Direction</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Winner</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best New Series</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2024 Nominee</span>
+            <span class="nominee-subtitle">Anime Award</span>
+            <span class="nominee-category">Best Opening Sequence</span>
+            <span class="nominee-name">Shingo Yamashita (storyboard and direction) Kenshi Yonezu (musician)</span>
+            <span class="episode-info">song "Kick Back"</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Boy of The Year</span>
+            <span class="episode-info">For Denji (5th place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Boy of The Year</span>
+            <span class="episode-info">For Aki Hayakawa (11th place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Girl of The Year</span>
+            <span class="episode-info">For Power (11th place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Supporting Girl of The Year</span>
+            <span class="episode-info">For Himeno (5th place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Kusunoki_Tomori.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Best Voice Acting Performance - Female</span>
+            <span class="nominee-name">Tomori Kusunoki</span>
+            <span class="episode-info">As Makima (4th place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Kenshi.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Opening Theme Song of The Year</span>
+            <span class="nominee-name">Kenshi Yonezu</span>
+            <span class="episode-info">For "Kick Back" - Kenshi Yonezu (3rd place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Vaundy.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Ending Theme Song of The Year</span>
+            <span class="nominee-name">Vaundy</span>
+            <span class="episode-info">For "Chainsaw Blood" - Vaundy (5th place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Anime of The Year</span>
+            <span class="episode-info">8th place</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/Kensuke.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Best in Soundtrack</span>
+            <span class="nominee-name">Kensuke Ushio</span>
+            <span class="episode-info">2nd place</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Best in Episode Directing and Storyboard</span>
+            <span class="nominee-name">Shouta Goshozono (Episode Director & Storyboard) Takeru Satoh (Episode Director)</span>
+            <span class="episode-info">For Episode 8 "Gunfire" (4th place)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Winner</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Action or Adventure Anime of The Year</span>
+
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Drama Anime of The Year</span>
+            <span class="episode-info">4th place</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2023 Nominee</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Supernatural Anime of The Year</span>
+            <span class="episode-info">3rd place</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2022 Winner</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Favorite Supporting Female Character</span>
+            <span class="episode-info">For Himeno (Fall 2022)</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2022 Winner</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Favorite Action or Adventure</span>
+            <span class="episode-info">Fall 2022</span>
+        </div>
+    </div>
+    <div class="nominee-card">
+        <img src="img/CsmA_Poster.png">
+        <div class="nominee-text">
+            <span class="nominee-title">2022 Winner</span>
+            <span class="nominee-subtitle">Annual Award</span>
+            <span class="nominee-category">Favorite Drama</span>
+            <span class="episode-info">Fall 2022</span>
+        </div>
+    </div>
+</div>
 <!-- JavaScript to Toggle Play/Pause for Each Button -->
 <script>
     // Get all play buttons and audio elements
