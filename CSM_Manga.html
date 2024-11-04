@@ -957,6 +957,21 @@ color: #666;
     };
 </script>
 <script>
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
     function toggleToc() {
         var tocContent = document.getElementById("tocContent");
         tocContent.style.display = tocContent.style.display === "none" ? "block" : "none";
