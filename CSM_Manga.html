@@ -15,6 +15,15 @@
   margin-right: auto;
   width: 20%;
 }
+#scrollTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 250px;
+        height: 250px;
+        display: none; 
+        cursor: pointer;
+    }
 h1{margin-left:5%;}
 h1{font-size: 35px;}
 h2{margin-left:5%;}
@@ -121,6 +130,11 @@ div.a {
   text-align: left;
   color: #0073e6;
 }
+td2 { padding: 50px; }
+div.a {
+  text-align: left;
+  color: #0073e6;
+}
 div.b {
   text-align: left;
   color: #666;
@@ -128,16 +142,72 @@ div.b {
 div.c {
 color: #666;
 }
+.toc-container {
+        width: 250px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    .toc-title {
+        font-weight: bold;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .toc-title:hover {
+        color: #555;
+    }
+    .toc-content {
+        list-style-type: none;
+        padding-left: 0;
+        display: none; 
+    }
+    .toc-content li {
+        margin: 5px 0;
+    }
+    .toc-content ul {
+        list-style-type: none;
+        padding-left: 20px;
+    }
+    .toc-content li a {
+        text-decoration: none;
+        color: #333;
+    }
+    .toc-content li a:hover {
+        color: #0073e6;
+    }
+    
     </style>
     </head>
     <body>
         <img src="img/Chainsaw_Man_(Japanese)_logo.png" width="100%" class="center">  
+        <div class="toc-container">
+            <div class="toc-title" onclick="toggleToc()">Contents</div>
+            <ul id="tocContent" class="toc-content">
+                <li><a href="#plot">1. Plot</a></li>
+                <li><a href="#chapters">2. Chapters</a></li>
+                <li><a href="#poll">3. Popularity Poll</a></li>
+                <ul>
+                    <li><a href="#poll1">3.1. 1st Popularity Poll</a></li>
+                    <li><a href="#poll2">3.2. 2nd Popularity Poll</a></li>
+                </ul>
+                <li><a href="#fuji">4. Tatsuki Fujimoto</a></li>
+                <ul>
+                    <li><a href="#bios">4.1 Biography</a></li>
+                    <li><a href="#work">4.2. Works</a></li>
+                </ul>
+                </ul>
+            </ul>
+        </div>
+    <section id="plot">
     <h1>Plot</h1>  
+    </section>
     <hr> 
     <p>When his father died, Denji was stuck with a huge debt and no way to pay it back. Thanks to a Devil dog he saved named Pochita, he's able to survive through odd jobs and killing Devils for the Yakuza. Pochita's chainsaw powers come in handy against these powerful demons. When the Yakuza betrays him and he's killed by the Zombie Devil, Pochita sacrifices himself to save his former master. Denji is then reborn as a Devil-Human hybrid known as Chainsaw Man.</p>
     <p>After his transformation, he's quickly recruited by Makima to join the Public Safety Devil Hunters under threat of extermination now that he's technically a Devil. Now that he's living comfortably for the first time in his life, Denji struggles to determine his dreams and form meaningful relationships while killing Devils and working alongside other eccentric Devil Hunters.</p>
     <br><br>
+    <section id="chapters">
     <h1>Chapters</h1>
+    </section>
     <hr>
     <table>
         <tr>
@@ -410,10 +480,14 @@ color: #666;
     </tr>
     </table>
     <br><br>
+    <section id="poll">
     <h1>Popularity Poll</h1>
+    </section>
     <hr>
     <br><br>
+    <section id="poll1">
     <h2>1st Popularity Poll</h2>
+    </section>
     <hr>
     <p>The first popularity poll took place between February and May 2020, allowing users to vote once a day for their favorite character. Results were announced in the 26th 2020 issue of Shonen Jump. The total number of votes was 231,201. Results were presented in a color spread depicting the winners at a beach wearing traditional Japanese school uniforms, which differ from the canonical ones worn by Asa Mitaka and others in Part 2. This spread was later released as a jigsaw puzzle from Ensky.</p>
     <br>
@@ -561,7 +635,9 @@ color: #666;
         </tr>
     </table1>
 <br><br><br>
+<section id="poll2">
 <h2>2nd Popularity Poll</h2>
+</section>
 <hr>
 <p>The second popularity poll took place between February and March 2021, allowing users to vote once a day for their favorite character. Results were announced in the 29th April 2021 at Shonen Jump along with an additional one-page comics featuring the first character. The total number of votes was 620,045.</p>
 <table>
@@ -708,14 +784,18 @@ color: #666;
     </tr>
 </table1>
 <br><br><br>
+<section id="fuji">
 <h1>Tatsuki Fujimoto</h1>
+</section>
 <hr>
 <br><br><br>
 <img src="img/Fujimoto.png" width="20%" class="center1">  
 <br>
 <p5>Tatsuki Fujimoto</p>
 <br>
+<section id="bios">
     <h2>Biography</h2>
+</section>
 <hr>
 <p>Tatsuki often drew images at an early age. In Junior High School he thought of a magazine in his head and often cut and serialized new works in it, usually serializing seven works. In his first years of high school, he started to upload manga to the website Shintosha.</p>
 <br>
@@ -731,7 +811,47 @@ color: #666;
 <br>
 <p>During November 2022, Tatsuki lost access to his primary account nagayama_koharu and created a new temporary one under the user handle @ashitaka_eva, at first fans were skeptical of his identity until Fujimoto's editor Shihei Lin confirmed his identity to fans through this tweet and Tatsuki shared some prototype designs for Aki, Power, and Denji's hybrid form on his new account. After Tatsuki was able to recover his main Twitter account, the temporary one he created was made inactive.</p>
 <br><br>
+<section id="work">
 <h2>Works</h2>
+</section>
 <hr>
+<br><br><br>
+<table2>
+    <tr>
+        <td2><img src="img/Before_Csm1.png" width="25%"></td2>
+        <td2><img src="img/Before_Csm2.png" width="25%"></td2>
+        <td2><img src="img/Fire_Punch.png" width="25%"></td2>
+    </tr>
+<br><br>
+    <tr>
+        <td2><img src="img/Look_Back.png" width="25%"></td2>
+        <td2><img src="img/Goodbye, Eri.png" width="25%"></td2>
+        <td2><img src="img/Just_Listen_to_the_Song.png" width="25%"></td2>
+    </tr>
+</table2>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<img src="img/Top.png" id="scrollTopButton" alt="Scroll to top" onclick="scrollToTop()">
+<script>
+    function toggleToc() {
+        var tocContent = document.getElementById("tocContent");
+        tocContent.style.display = tocContent.style.display === "none" ? "block" : "none";
+    }
+</script>
+<script>
+    window.onscroll = function() {
+        var scrollTopButton = document.getElementById("scrollTopButton");
+        if (document.body.scrollTop > 11700 || document.documentElement.scrollTop > 11700) {
+            scrollTopButton.style.display = "block";
+        } else {
+            scrollTopButton.style.display = "none";
+        }
+    };
+</script>
+<script>
+    function toggleToc() {
+        var tocContent = document.getElementById("tocContent");
+        tocContent.style.display = tocContent.style.display === "none" ? "block" : "none";
+    }
+</script>
     </body>
 </html>
