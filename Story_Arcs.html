@@ -148,9 +148,34 @@
         padding-left: 20px;
         margin: 0;
     }
+    #scrollTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 250px;
+        height: 250px;
+        display: none; 
+        cursor: pointer;
+    }
     </style>
     </head>
 <body>
+  <img src="img/Top.png" id="scrollTopButton" alt="Scroll to top" onclick="scrollToTop()">
+  <script>
+    window.onscroll = function() {
+        var scrollTopButton = document.getElementById("scrollTopButton");
+        if (document.body.scrollTop > 2900 || document.documentElement.scrollTop > 2900) {
+            scrollTopButton.style.display = "block";
+        } else {
+            scrollTopButton.style.display = "none";
+        }
+    };
+</script>
+<script>
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
     <script>
         function myFunction() {
           var x = document.getElementById("myTopnav");
@@ -274,6 +299,196 @@
                     <li>5. Gun Devil (partially)</li>
                     <li>6. Kill Denji</li>
                     <li>7. The Taste of a Kiss</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="header">Katana Man arc</div>
+        <div class="subheader">
+          A sudden assault on Special Division 4 leaves the surviving members disoriented, confused, and thirsty for revenge.
+        </div>
+        <div class="content-row">
+            <div class="column">
+                <div class="section-title">Manga</div>
+                <div class="number-title">Number of Chapters: 17</div>
+                <ul class="list">
+                    <li>22. Cola-Flavor Chupa Chups</li>
+                    <li>23. Gunfire</li>
+                    <li>24. Curse</li>
+                    <li>25. Ghost, Snake, Chainsaw</li>
+                    <li>26. The Gun is Mightier</li>
+                    <li>27. From Kyoto</li>
+                    <li>28. Secrets & Lies</li>
+                    <li>29. Perfect Score</li>
+                    <li>30. Bruised & Battered</li>
+                    <li>31. The Future Rules</li>
+                    <li>32. Over and Over Again</li>
+                    <li>33: Mission Start</li>
+                    <li>34: Full Team</li>
+                    <li>35: Minor</li>
+                    <li>36: Katana vs. Chainsaw</li>
+                    <li>37: Train, Head, Chainsaw</li>
+                    <li>38: Easy Revenge!</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="section-title">Anime</div>
+                <div class="number-title">Number of Episodes: 5</div>
+                <ul class="list">
+                    <li>8. Gunfire</li>
+                    <li>9. From Kyoto</li>
+                    <li>10. Bruised & Battered</li>
+                    <li>11. Mission Start</li>
+                    <li>12. Katana vs. Chainsaw</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="header">Bomb Girl arc</div>
+        <div class="subheader">
+          Denji encounters a new romantic interest who turns out to have a more explosive side than he anticipated.
+        </div>
+        <div class="content-row">
+            <div class="column">
+                <div class="section-title">Manga</div>
+                <div class="number-title">Number of Chapters: 14</div>
+                <ul class="list">
+                    <li>39: Tearjerker</li>
+                    <li>40: Love, Flower, Chainsaw</li>
+                    <li>41: Before the Storm</li>
+                    <li>42: Teach Me How to Swim</li>
+                    <li>43: Jane Fell Asleep in the Church</li>
+                    <li>44: BOOM BOOM BOOM</li>
+                    <li>45: A Fine Day for Explosions</li>
+                    <li>46: Massacre Melody</li>
+                    <li>47: Luck With Women</li>
+                    <li>48: KABOOM KABOOM KABOOM</li>
+                    <li>49: Shark Hurricane</li>
+                    <li>50: Sharknado</li>
+                    <li>51: Dark Diving</li>
+                    <li>52: Lost Love, Flower, Chainsaw</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="section-title">Anime</div>
+                <div class="number-title">Number of Episodes: N/A</div>
+                <ul class="list">
+                    <li>Chainsaw Man - The Movie: Reze Arc</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="header">International Assassins arc</div>
+        <div class="subheader">
+          After news of Denji spreads, he finds himself becoming a target for a number of people.
+        </div>
+        <div class="content-row">
+            <div class="column">
+                <div class="section-title">Manga</div>
+                <div class="number-title">Number of Chapters: 18</div>
+                <ul class="list">
+                    <li>53: In a Dream</li>
+                    <li>54: To Go to Enoshima</li>
+                    <li>55: Let's Go</li>
+                    <li>56: A Curse and a First</li>
+                    <li>57: Suddenly</li>
+                    <li>58: Yutaro Kurose</li>
+                    <li>59: Mess</li>
+                    <li>60. Quanxi and Fiends' 49-Person Massacre</li>
+                    <li>61. News Reporter</li>
+                    <li>62. Super Mess</li>
+                    <li>63. Trip to Hell</li>
+                    <li>64. Welcome to Hell</li>
+                    <li>65. The Darkness Devil</li>
+                    <li>66. Woof!</li>
+                    <li>67. The First Devil Hunter</li>
+                    <li>68. Dark Power</li>
+                    <li>69. Shining Power</li>
+                    <li>70. Pinch</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="section-title">Anime</div>
+                <div class="number-title">Number of Episodes: ?</div>
+                <ul class="list">
+                    ?
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="header">Gun Devil arc</div>
+        <div class="subheader">
+          Denji's desires are put to the test as the battle against the Gun Devil begins.
+        </div>
+        <div class="content-row">
+            <div class="column">
+                <div class="section-title">Manga</div>
+                <div class="number-title">Number of Chapters: 9</div>
+                <ul class="list">
+                    <li>71. Bath</li>
+                    <li>72. All Together</li>
+                    <li>73. Everyday Life No More</li>
+                    <li>74. What the Waves Say</li>
+                    <li>75. 9,12</li>
+                    <li>76. Don't Open It</li>
+                    <li>77. Ring Ring Ring</li>
+                    <li>78. Snowball Fight</li>
+                    <li>79. Play Catch</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="section-title">Anime</div>
+                <div class="number-title">Number of Episodes: ?</div>
+                <ul class="list">
+                    ?
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="container">
+        <div class="header">Control Devil arc</div>
+        <div class="subheader">
+          Ulterior motives come to light as a grieving Denji turns to Makima for comfort.
+        </div>
+        <div class="content-row">
+            <div class="column">
+                <div class="section-title">Manga</div>
+                <div class="number-title">Number of Chapters: 18</div>
+                <ul class="list">
+                    <li>80. A Dog's Feelings</li>
+                    <li>81. Paw</li>
+                    <li>82. Always Eat a Hearty Breakfast</li>
+                    <li>83. Death, Resurrection, Chainsaw</li>
+                    <li>84. Hero of Hell</li>
+                    <li>85. Bloody Good Gut Feeling</li>
+                    <li>86. Date Chainsaw</li>
+                    <li>87. Chainsaw Man vs. the Horrifying Weapon Humans</li>
+                    <li>88. Star Chainsaw</li>
+                    <li>89. Go Get 'Em, Chainsaw Man</li>
+                    <li>90. Super Power</li>
+                    <li>91. Power, Power, Power</li>
+                    <li>92. Vanilla Sky</li>
+                    <li>93. You & Crappy Movies</li>
+                    <li>94. Chainsaw Man vs. the Weapon Humans</li>
+                    <li>95. Chainsaw Man vs. Control Devil</li>
+                    <li>96. This Kind of Taste</li>
+                    <li>97. I, Love, Chainsaw</li>
+                </ul>
+            </div>
+            <div class="column">
+                <div class="section-title">Anime</div>
+                <div class="number-title">Number of Episodes: ?</div>
+                <ul class="list">
+                    ?
                 </ul>
             </div>
         </div>
